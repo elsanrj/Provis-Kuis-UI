@@ -1,7 +1,9 @@
-import 'Package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'HomePage.dart';
 import 'DetailPage.dart';
 import 'ChatBooking.dart';
+import 'ReturnPage.dart';
+import 'StatusPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,6 +21,8 @@ class MyApp extends StatelessWidget {
         '/home': (context) => HomePage(),
         '/detail': (context) => DetailPage(),
         '/chat': (context) => ChatBooking(),
+        '/transaksi': (context) => TransaksiPage(),
+        '/return': (context) => ReturnPage(),
       },
     );
   }
@@ -82,9 +86,18 @@ class MainPage extends StatelessWidget {
               SizedBox(height: 20),
               Text('Transaksi', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
               SizedBox(height: 10),
-              ElevatedButton(onPressed: () {}, child: Text('Monitor Pesanan')),
-              SizedBox(height: 10),
-              ElevatedButton(onPressed: () {}, child: Text('Pengembalian')),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/transaksi');
+                },
+                child: Text('Monitor Pemesanan'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/return');
+                },
+                child: Text('Pengembalian'),
+              ),
               SizedBox(height: 20),
               Text('User', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
               SizedBox(height: 10),
