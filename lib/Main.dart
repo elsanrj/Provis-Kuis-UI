@@ -1,9 +1,12 @@
-import 'package:flutter/material.dart';
+import 'Package:flutter/material.dart';
 import 'HomePage.dart';
 import 'DetailPage.dart';
 import 'ChatBooking.dart';
-import 'ReturnPage.dart';
-import 'StatusPage.dart';
+import 'CheckoutPage.dart';
+import 'KeranjangPage.dart';
+import 'PromoPage.dart';
+import 'ReviewPage.dart';
+import 'WishList.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,8 +24,11 @@ class MyApp extends StatelessWidget {
         '/home': (context) => HomePage(),
         '/detail': (context) => DetailPage(),
         '/chat': (context) => ChatBooking(),
-        '/transaksi': (context) => TransaksiPage(),
-        '/return': (context) => ReturnPage(),
+        '/checkout': (context) => Checkout(),
+        '/keranjang': (context) => Keranjang(),
+        '/promo': (context) => Promo(),
+        '/review': (context) => Review(),
+        '/wishlist': (context) => Wishlist(),
       },
     );
   }
@@ -61,14 +67,17 @@ class MainPage extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushNamed(context, '/home');
                 },
-                child: Text('Halaman Depan', selectionColor: Color.fromARGB(255, 24, 151, 102)),
+                child: Text(
+                  'Halaman Depan',
+                  selectionColor: Color.fromARGB(255, 24, 151, 102),
+                ),
               ),
               SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, '/detail');
                 },
-                child: Text('Rincian Item'),
+                child: Text('Detail Item'),
               ),
               SizedBox(height: 10),
               ElevatedButton(
@@ -78,26 +87,61 @@ class MainPage extends StatelessWidget {
                 child: Text('Chat'),
               ),
               SizedBox(height: 10),
-              ElevatedButton(onPressed: () {}, child: Text('Wishlist')),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/wishlist');
+                },
+                child: Text('Wishlist'),
+              ),
               SizedBox(height: 10),
-              ElevatedButton(onPressed: () {}, child: Text('Keranjang & Checkout')),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/keranjang');
+                },
+                child: Text('Keranjang'),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/checkout');
+                },
+                child: Text('Checkout'),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/review');
+                },
+                child: Text('Review'),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/promo');
+                },
+                child: Text('Promo'),
+              ),
               SizedBox(height: 10),
               ElevatedButton(onPressed: () {}, child: Text('Pembelian Paket')),
               SizedBox(height: 20),
-              Text('Transaksi', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+              Text(
+                'Transaksi',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
               SizedBox(height: 10),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/transaksi');
-                },
-                child: Text('Monitor Pemesanan'),
+              ElevatedButton(onPressed: () {}, child: Text('Monitor Pesanan')),
+              SizedBox(height: 10),
+              ElevatedButton(onPressed: () {}, child: Text('Pengembalian')),
+              SizedBox(height: 20),
+              Text(
+                'User',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/return');
-                },
-                child: Text('Pengembalian'),
-              ),
+              SizedBox(height: 10),
+              ElevatedButton(onPressed: () {}, child: Text('Pembeli')),
+              SizedBox(height: 10),
+              ElevatedButton(onPressed: () {}, child: Text('Penjual')),
+              SizedBox(height: 20),
             ],
           ),
         ),
