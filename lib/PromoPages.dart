@@ -31,7 +31,7 @@ class PromoPage extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
                 image: DecorationImage(
-                  image: AssetImage('assets/happy_summer_camp.png'), // Ganti dengan path gambar yang sesuai
+                  image: AssetImage('assets/banner-promo.jpg'), // Ganti dengan path gambar yang sesuai
                   fit: BoxFit.cover,
                 ),
               ),
