@@ -1,4 +1,4 @@
-import 'Package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'HomePage.dart';
 import 'DetailPage.dart';
 import 'ChatBooking.dart';
@@ -7,6 +7,8 @@ import 'KeranjangPage.dart';
 import 'PromoPage.dart';
 import 'ReviewPage.dart';
 import 'WishList.dart';
+import 'ReturnPage.dart';
+import 'StatusPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -24,6 +26,8 @@ class MyApp extends StatelessWidget {
         '/home': (context) => HomePage(),
         '/detail': (context) => DetailPage(),
         '/chat': (context) => ChatBooking(),
+        '/transaksi': (context) => TransaksiPage(),
+        '/return': (context) => ReturnPage(),
         '/checkout': (context) => Checkout(),
         '/keranjang': (context) => Keranjang(),
         '/promo': (context) => Promo(),
@@ -128,20 +132,18 @@ class MainPage extends StatelessWidget {
                 'Transaksi',
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 10),
-              ElevatedButton(onPressed: () {}, child: Text('Monitor Pesanan')),
-              SizedBox(height: 10),
-              ElevatedButton(onPressed: () {}, child: Text('Pengembalian')),
-              SizedBox(height: 20),
-              Text(
-                'User',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/transaksi');
+                },
+                child: Text('Monitor Pemesanan'),
               ),
-              SizedBox(height: 10),
-              ElevatedButton(onPressed: () {}, child: Text('Pembeli')),
-              SizedBox(height: 10),
-              ElevatedButton(onPressed: () {}, child: Text('Penjual')),
-              SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/return');
+                },
+                child: Text('Pengembalian'),
+              ),
             ],
           ),
         ),
