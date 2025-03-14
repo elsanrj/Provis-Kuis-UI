@@ -4,28 +4,28 @@ class DetailPage extends StatelessWidget {
   // Data untuk setiap item
   final List<Map<String, dynamic>> items = [
     {
-      'imageUrl': 'https://example.com/tent_image1.jpg',
+      'imageUrl': 'assets/tenda2.jpg',
       'title': 'Tenda Kemah Kapasitas 4 Orang',
       'price': 'Rp. 100.000/hari (sisa 5)',
       'description':
           'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s...',
     },
     {
-      'imageUrl': 'https://example.com/tent_image2.jpg',
+      'imageUrl': 'assets/tenda 1.jpg',
       'title': 'Tenda Kemah Kapasitas 2 Orang',
       'price': 'Rp. 75.000/hari (sisa 3)',
       'description':
           'This is a smaller tent, perfect for couples or solo campers. Lightweight and easy to set up.',
     },
     {
-      'imageUrl': 'https://example.com/tent_image3.jpg',
+      'imageUrl': 'assets/tenda2.jpg',
       'title': 'Tenda Kemah Kapasitas 6 Orang',
       'price': 'Rp. 150.000/hari (sisa 2)',
       'description':
           'A spacious tent for larger groups or families. Comes with multiple rooms and excellent ventilation.',
     },
     {
-      'imageUrl': 'https://example.com/tent_image4.jpg',
+      'imageUrl': 'assets/tenda 1.jpg',
       'title': 'Tenda Kemah Kapasitas 8 Orang',
       'price': 'Rp. 200.000/hari (sisa 1)',
       'description':
@@ -37,8 +37,8 @@ class DetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Detail Item'),
-        backgroundColor: Colors.teal,
+        title: Text('Detail Item', style: TextStyle(color: Colors.white)),
+        backgroundColor: Color(0xFF2C5C5B),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -84,7 +84,7 @@ class DetailPage extends StatelessWidget {
                   item['price'], // Harga dari data
                   style: TextStyle(
                     fontSize: 16.0,
-                    color: Colors.teal,
+                    color: Color(0xFF2C5C5B),
                   ),
                 ),
                 SizedBox(height: 8.0),

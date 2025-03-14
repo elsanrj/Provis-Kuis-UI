@@ -17,25 +17,25 @@ class HomePage extends StatelessWidget {
   // Data untuk produk tenda
   final List<Map<String, dynamic>> products = [
     {
-      'imageUrl': 'https://via.placeholder.com/150',
+      'imageUrl': 'assets/tenda 1.jpg',
       'title': 'Tenda Kemah Kapasitas 4 Orang',
       'price': 'Rp. 100.000/hari (sisa 5)',
       'description': 'Tenda yang tahan angin dan nyaman untuk bersama',
     },
     {
-      'imageUrl': 'https://via.placeholder.com/150',
+      'imageUrl': 'assets/tenda2.jpg',
       'title': 'Tenda Kemah Kapasitas 2 Orang',
       'price': 'Rp. 75.000/hari (sisa 3)',
       'description': 'Tenda ringan dan mudah dibawa, cocok untuk solo traveler',
     },
     {
-      'imageUrl': 'https://via.placeholder.com/150',
-      'title': 'Tenda Kemah Kapasitas 6 Orang',
-      'price': 'Rp. 150.000/hari (sisa 2)',
-      'description': 'Tenda besar dengan ruang yang luas, cocok untuk keluarga',
+      'imageUrl': 'assets/sepatu2.jpg',
+      'title': 'Sepatu Gunung Terbagus',
+      'price': 'Rp. 45.000/hari (sisa 1)',
+      'description': 'Sepatu yang nyaman, tahan banting, dan cocok disegala cuaca',
     },
     {
-      'imageUrl': 'https://via.placeholder.com/150',
+      'imageUrl': 'assets/sepatu1.jpg',
       'title': 'Sepatu Gunung Terbaek',
       'price': 'Rp. 60.000/hari (sisa 1)',
       'description': 'Sepatu yang nyaman, tahan banting, dan cocok disegala cuaca',
@@ -46,11 +46,11 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cari Item'),
-        backgroundColor: Colors.teal,
+        title: Text('Home Page', style: TextStyle(color: Colors.white),),
+        backgroundColor: const Color(0xFF2C5C5B),
         actions: [
           IconButton(
-            icon: Icon(Icons.person),
+            icon: Icon(Icons.person, color: Colors.white,),
             onPressed: () {},
           ),
         ],
@@ -104,7 +104,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.teal, // Background warna teal
+        backgroundColor:Color(0xFF2C5C5B), // Background warna teal
         selectedItemColor: Colors.white, // Warna icon dan label saat aktif
         unselectedItemColor: Colors.white.withOpacity(0.7), // Warna icon dan label saat tidak aktif
         type: BottomNavigationBarType.fixed,
@@ -139,9 +139,9 @@ class HomePage extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: [
-          _buildPackageCard('PAKET A', 'Rp. 150.000/hari (sisa 3)', 'Tas, tenda, jaket, dan alat tidur', 'https://example.com/paketA.jpg'),
-          _buildPackageCard('PAKET B', 'Rp. 200.000/hari (sisa 5)', 'Tas, tenda, penerangan, dan alat tidur', 'https://example.com/paketB.jpg'),
-          _buildPackageCard('PAKET C', 'Rp. 300.000/hari (sisa 5)', 'Tas, tenda, alat masak, jaket, penerangan, dan alat tidur', 'https://example.com/paketC.jpg'),
+          _buildPackageCard('PAKET A', 'Rp. 150.000/hari (sisa 3)', 'Tas, tenda, jaket, dan alat tidur', 'assets/paketA.jpg'),
+          _buildPackageCard('PAKET B', 'Rp. 200.000/hari (sisa 5)', 'Tas, tenda, penerangan, dan alat tidur', 'assets/paketB.jpg'),
+          _buildPackageCard('PAKET C', 'Rp. 300.000/hari (sisa 5)', 'Tas, tenda, alat masak, jaket, penerangan, dan alat tidur', 'assets/paketC.jpg'),
         ],
       ),
     );
@@ -158,7 +158,7 @@ class HomePage extends StatelessWidget {
           ),
           SizedBox(height: 5.0),
           Text(title, style: TextStyle(fontWeight: FontWeight.bold)),
-          Text(price, style: TextStyle(color: Colors.teal)),
+          Text(price, style: TextStyle(color:Color(0xFF2C5C5B))),
           Text(description, style: TextStyle(fontSize: 10.0), textAlign: TextAlign.center),
         ],
       ),
@@ -216,7 +216,7 @@ class ProductCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(title, style: TextStyle(fontWeight: FontWeight.bold)),
-                Text(price, style: TextStyle(color: Colors.teal)),
+                Text(price, style: TextStyle(color: Color(0xFF2C5C5B))),
                 Text(description, style: TextStyle(fontSize: 12.0)),
               ],
             ),

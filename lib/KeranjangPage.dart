@@ -31,9 +31,9 @@ class KeranjangPage extends State<Keranjang> {
               Navigator.pop(context); // Kembali ke halaman sebelumnya
             },
           ),
-          title: const Text('Keranjang(5)', style: TextStyle(fontSize: 20)),
+          title: const Text('Keranjang(5)', style: TextStyle(fontSize: 20, color: Colors.white)),
           centerTitle: true,
-          backgroundColor: Colors.blue,
+          backgroundColor: Color(0xFF2C5C5B),
           actions: [
             IconButton(
               icon: Icon(Icons.shopping_cart),
@@ -119,7 +119,7 @@ class KeranjangPage extends State<Keranjang> {
                                     ),
                                     SizedBox(width: 5),
                                     Image.asset(
-                                      "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                      "tas2.jpg", //pastikan file ada di [project]/assets/images
                                       height: 120,
                                     ),
                                     SizedBox(width: 5),
@@ -415,7 +415,7 @@ class KeranjangPage extends State<Keranjang> {
                                     ),
                                     SizedBox(width: 5),
                                     Image.asset(
-                                      "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                      "penerangan1.jpg", //pastikan file ada di [project]/assets/images
                                       height: 120,
                                     ),
                                     SizedBox(width: 5),
@@ -711,7 +711,7 @@ class KeranjangPage extends State<Keranjang> {
                                     ),
                                     SizedBox(width: 5),
                                     Image.asset(
-                                      "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                      "jaket2.jpg", //pastikan file ada di [project]/assets/images
                                       height: 120,
                                     ),
                                     SizedBox(width: 5),
@@ -1007,7 +1007,7 @@ class KeranjangPage extends State<Keranjang> {
                                     ),
                                     SizedBox(width: 5),
                                     Image.asset(
-                                      "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                      "alatmasak2.jpg", //pastikan file ada di [project]/assets/images
                                       height: 120,
                                     ),
                                     SizedBox(width: 5),
@@ -1303,7 +1303,7 @@ class KeranjangPage extends State<Keranjang> {
                                     ),
                                     SizedBox(width: 5),
                                     Image.asset(
-                                      "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                      "alattidur1.jpg", //pastikan file ada di [project]/assets/images
                                       height: 120,
                                     ),
                                     SizedBox(width: 5),
@@ -1600,7 +1600,7 @@ class KeranjangPage extends State<Keranjang> {
                           // Tambahkan aksi ketika tombol ditekan
                         },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.blue, // Warna tombol
+                          backgroundColor: Color(0xFF2C5C5B), // Warna tombol
                           padding: EdgeInsets.symmetric(
                             horizontal: 24,
                             vertical: 12,

@@ -26,9 +26,9 @@ class WishlistPage extends State<Wishlist> {
               Navigator.pop(context); // Kembali ke halaman sebelumnya
             },
           ),
-          title: const Text('Wishlist(5)', style: TextStyle(fontSize: 20)),
+          title: const Text('Wishlist(5)', style: TextStyle(color: Colors.white)),
           centerTitle: true,
-          backgroundColor: Colors.blue,
+          backgroundColor: Color(0xFF2C5C5B),
           actions: [
             IconButton(
               icon: Icon(Icons.shopping_cart),
@@ -101,7 +101,7 @@ class WishlistPage extends State<Wishlist> {
                                 Row(
                                   children: [
                                     Image.asset(
-                                      "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                      "penerangan1.jpg", //pastikan file ada di [project]/assets/images
                                       height: 120,
                                     ),
                                     SizedBox(width: 5),
@@ -164,9 +164,9 @@ class WishlistPage extends State<Wishlist> {
                                                     // Tambahkan aksi ketika tombol ditekan
                                                   },
                                                   style: ElevatedButton.styleFrom(
-                                                    backgroundColor:
-                                                        Colors
-                                                            .blue, // Warna tombol
+                                                    backgroundColor: Color(
+                                                      0xFF2C5C5B,
+                                                    ), // Warna tombol
                                                     padding:
                                                         EdgeInsets.symmetric(
                                                           horizontal: 24,
@@ -233,7 +233,7 @@ class WishlistPage extends State<Wishlist> {
                                 Row(
                                   children: [
                                     Image.asset(
-                                      "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                      "jaket1.jpg", //pastikan file ada di [project]/assets/images
                                       height: 120,
                                     ),
                                     SizedBox(width: 5),
@@ -296,9 +296,9 @@ class WishlistPage extends State<Wishlist> {
                                                     // Tambahkan aksi ketika tombol ditekan
                                                   },
                                                   style: ElevatedButton.styleFrom(
-                                                    backgroundColor:
-                                                        Colors
-                                                            .blue, // Warna tombol
+                                                    backgroundColor: Color(
+                                                      0xFF2C5C5B,
+                                                    ), // Warna tombol
                                                     padding:
                                                         EdgeInsets.symmetric(
                                                           horizontal: 24,
@@ -365,7 +365,7 @@ class WishlistPage extends State<Wishlist> {
                                 Row(
                                   children: [
                                     Image.asset(
-                                      "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                      "alattidur1.jpg", //pastikan file ada di [project]/assets/images
                                       height: 120,
                                     ),
                                     SizedBox(width: 5),
@@ -428,9 +428,9 @@ class WishlistPage extends State<Wishlist> {
                                                     // Tambahkan aksi ketika tombol ditekan
                                                   },
                                                   style: ElevatedButton.styleFrom(
-                                                    backgroundColor:
-                                                        Colors
-                                                            .blue, // Warna tombol
+                                                    backgroundColor: Color(
+                                                      0xFF2C5C5B,
+                                                    ), // Warna tombol
                                                     padding:
                                                         EdgeInsets.symmetric(
                                                           horizontal: 24,
@@ -497,7 +497,7 @@ class WishlistPage extends State<Wishlist> {
                                 Row(
                                   children: [
                                     Image.asset(
-                                      "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                      "alatmasak1.jpg", //pastikan file ada di [project]/assets/images
                                       height: 120,
                                     ),
                                     SizedBox(width: 5),
@@ -560,9 +560,9 @@ class WishlistPage extends State<Wishlist> {
                                                     // Tambahkan aksi ketika tombol ditekan
                                                   },
                                                   style: ElevatedButton.styleFrom(
-                                                    backgroundColor:
-                                                        Colors
-                                                            .blue, // Warna tombol
+                                                    backgroundColor: Color(
+                                                      0xFF2C5C5B,
+                                                    ), // Warna tombol
                                                     padding:
                                                         EdgeInsets.symmetric(
                                                           horizontal: 24,
@@ -629,7 +629,7 @@ class WishlistPage extends State<Wishlist> {
                                 Row(
                                   children: [
                                     Image.asset(
-                                      "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                      "penerangan2.jpg", //pastikan file ada di [project]/assets/images
                                       height: 120,
                                     ),
                                     SizedBox(width: 5),
@@ -692,9 +692,9 @@ class WishlistPage extends State<Wishlist> {
                                                     // Tambahkan aksi ketika tombol ditekan
                                                   },
                                                   style: ElevatedButton.styleFrom(
-                                                    backgroundColor:
-                                                        Colors
-                                                            .blue, // Warna tombol
+                                                    backgroundColor: Color(
+                                                      0xFF2C5C5B,
+                                                    ), // Warna tombol
                                                     padding:
                                                         EdgeInsets.symmetric(
                                                           horizontal: 24,
@@ -738,7 +738,6 @@ class WishlistPage extends State<Wishlist> {
                 ),
               ],
             ),
-            
           ],
         ),
       ),

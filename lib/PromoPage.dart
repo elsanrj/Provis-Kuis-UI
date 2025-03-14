@@ -25,14 +25,54 @@ class PromoPage extends State<Promo> {
               Navigator.pop(context); // Kembali ke halaman sebelumnya
             },
           ),
-          title: const Text(
-            'Promos',
-            style: TextStyle(fontSize: 20),
-          ),
+          title: const Text('Promos', style: TextStyle(fontSize: 20)),
           centerTitle: true,
           backgroundColor: Colors.blue,
         ),
-        body: ListView(children: []),
+        body: ListView(
+          children: [
+            Image.asset(
+              'banner.jpg',
+              width: double.infinity, // Lebar penuh
+              height: 200, // Sesuaikan tinggi
+              fit: BoxFit.cover, // Menyesuaikan gambar ke ukuran container
+            ),
+            Padding(
+              padding: EdgeInsets.all(15),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Expanded(
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: "Search...",
+                        prefixIcon: Icon(Icons.search),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 10), // Jarak antara search dan button
+                  ElevatedButton.icon(
+                    onPressed: () {}, // Tidak melakukan apa-apa
+                    style: ElevatedButton.styleFrom(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 13,
+                        vertical: 23,
+                      ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                    ),
+                    icon: Icon(Icons.sort),
+                    label: Text("Sort"),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

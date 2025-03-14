@@ -5,7 +5,7 @@ class ChatBooking extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Chat Booking'),
+        title: Text('Chat Booking', style: TextStyle(color: Colors.white),),
         backgroundColor: Color(0xFF2C5C5B),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),

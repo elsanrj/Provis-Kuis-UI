@@ -29,10 +29,10 @@ class ReviewPage extends State<Review> {
           ),
           title: const Text(
             'Rating and Reviews',
-            style: TextStyle(fontSize: 20),
+            style: TextStyle(fontSize: 20, color: Colors.white),
           ),
           centerTitle: true,
-          backgroundColor: Colors.blue,
+          backgroundColor: Color(0xFF2C5C5B),
         ),
         body: ListView(
           children: [
@@ -85,7 +85,7 @@ class ReviewPage extends State<Review> {
                         children: [
                           // Avatar di sebelah kiri
                           CircleAvatar(
-                            backgroundColor: Colors.blue,
+                            backgroundColor: Color(0xFF2C5C5B),
                             radius: 20,
                             child: Icon(
                               Icons.person,
@@ -129,7 +129,7 @@ class ReviewPage extends State<Review> {
                                   child: Row(
                                     children: [
                                       Image.asset(
-                                        "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                        "sepatu2.jpg", //pastikan file ada di [project]/assets/images
                                         height: 50,
                                       ),
                                       SizedBox(width: 5),
@@ -172,15 +172,15 @@ class ReviewPage extends State<Review> {
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     Image.asset(
-                                      "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                      "sepatu2.jpg", //pastikan file ada di [project]/assets/images
                                       height: 120,
                                     ),
                                     Image.asset(
-                                      "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                      "sepatu2.jpg", //pastikan file ada di [project]/assets/images
                                       height: 120,
                                     ),
                                     Image.asset(
-                                      "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                      "sepatu2.jpg", //pastikan file ada di [project]/assets/images
                                       height: 120,
                                     ),
                                   ],
@@ -241,7 +241,7 @@ class ReviewPage extends State<Review> {
                         children: [
                           // Avatar di sebelah kiri
                           CircleAvatar(
-                            backgroundColor: Colors.blue,
+                            backgroundColor: Color(0xFF2C5C5B),
                             radius: 20,
                             child: Icon(
                               Icons.person,
@@ -285,7 +285,7 @@ class ReviewPage extends State<Review> {
                                   child: Row(
                                     children: [
                                       Image.asset(
-                                        "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                        "alattidur2.jpg", //pastikan file ada di [project]/assets/images
                                         height: 50,
                                       ),
                                       SizedBox(width: 5),
@@ -328,15 +328,15 @@ class ReviewPage extends State<Review> {
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     Image.asset(
-                                      "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                      "alattidur2.jpg", //pastikan file ada di [project]/assets/images
                                       height: 120,
                                     ),
                                     Image.asset(
-                                      "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                      "alattidur2.jpg", //pastikan file ada di [project]/assets/images
                                       height: 120,
                                     ),
                                     Image.asset(
-                                      "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                      "alattidur2.jpg", //pastikan file ada di [project]/assets/images
                                       height: 120,
                                     ),
                                   ],
@@ -397,7 +397,7 @@ class ReviewPage extends State<Review> {
                         children: [
                           // Avatar di sebelah kiri
                           CircleAvatar(
-                            backgroundColor: Colors.blue,
+                            backgroundColor: Color(0xFF2C5C5B),
                             radius: 20,
                             child: Icon(
                               Icons.person,
@@ -441,7 +441,7 @@ class ReviewPage extends State<Review> {
                                   child: Row(
                                     children: [
                                       Image.asset(
-                                        "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                        "paketC.jpg", //pastikan file ada di [project]/assets/images
                                         height: 50,
                                       ),
                                       SizedBox(width: 5),
@@ -484,15 +484,15 @@ class ReviewPage extends State<Review> {
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     Image.asset(
-                                      "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                      "paketC.jpg", //pastikan file ada di [project]/assets/images
                                       height: 120,
                                     ),
                                     Image.asset(
-                                      "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                      "paketC.jpg", //pastikan file ada di [project]/assets/images
                                       height: 120,
                                     ),
                                     Image.asset(
-                                      "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                      "paketC.jpg", //pastikan file ada di [project]/assets/images
                                       height: 120,
                                     ),
                                   ],

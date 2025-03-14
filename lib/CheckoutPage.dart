@@ -26,9 +26,9 @@ class CheckoutPage extends State<Checkout> {
               Navigator.pop(context); // Kembali ke halaman sebelumnya
             },
           ),
-          title: const Text('Checkout(5)', style: TextStyle(fontSize: 20)),
+          title: const Text('Checkout', style: TextStyle(fontSize: 20,color: Colors.white)),
           centerTitle: true,
-          backgroundColor: Colors.blue,
+          backgroundColor: Color(0xFF2C5C5B),
         ),
         body: ListView(
           children: [
@@ -96,7 +96,7 @@ class CheckoutPage extends State<Checkout> {
                           Row(
                             children: [
                               Image.asset(
-                                "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                "tas1.webp", //pastikan file ada di [project]/assets/images
                                 height: 65,
                               ),
                               SizedBox(width: 5),
@@ -182,7 +182,7 @@ class CheckoutPage extends State<Checkout> {
                           Row(
                             children: [
                               Image.asset(
-                                "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                "alatmasak2.jpg", //pastikan file ada di [project]/assets/images
                                 height: 65,
                               ),
                               SizedBox(width: 5),
@@ -267,7 +267,7 @@ class CheckoutPage extends State<Checkout> {
                           Row(
                             children: [
                               Image.asset(
-                                "kucingindomaret.jpg", //pastikan file ada di [project]/assets/images
+                                "paketA.jpg", //pastikan file ada di [project]/assets/images
                                 height: 65,
                               ),
                               SizedBox(width: 5),
@@ -433,7 +433,7 @@ class CheckoutPage extends State<Checkout> {
                       // Tambahkan aksi ketika tombol ditekan
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue, // Warna tombol
+                      backgroundColor: Color(0xFF2C5C5B), // Warna tombol
                       padding: EdgeInsets.symmetric(
                         horizontal: 24,
                         vertical: 12,
