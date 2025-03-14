@@ -80,6 +80,16 @@ class PromoPage extends StatelessWidget {
           ],
         ),
       ),
+      appBar: AppBar(
+        title: Text('Promo'),
+        backgroundColor: Color(0xFF1D4F59),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context); // Kembali ke halaman sebelumnya
+          },
+        ),
+      ),
     );
   }
 
